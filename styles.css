@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    margin-left: -2;
+}
+body {
+    background-color: #F3F4F9;
+    size: 100%;
+} 
+/*General Data*/
+#mWorks {transition-property: visible; transition-delay: 3s;}
+#mMe {transition-property: visible; transition-delay: 3s;}
+
+#txts{
+    z-index: 1000;
+    content: "&nbsp; Works";
+    content: "&nbsp; Me";
+    content: "&nbsp; Projects";
+    content: "&nbsp; ProductSkecthes";
+    content: "&nbsp; Artworks";
+    content: "&nbsp; Photographs";
+    content: "&nbsp; Project1";
+    content: "&nbsp; Project2";
+    content: "&nbsp; Project3";
+    content: "&nbsp; Project4";
+} 
+
+@keyframes draw {
+    to {
+    stroke-dashoffset: 0;
+    }
+}
+
+svg path, svg line{
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/*Splash page Animation Forward and Backward Data*/
+    .StrokeTop, .StrokeBottom {
+        stroke-dasharray: 1700; 
+        stroke-dashoffset: 1700;  
+        animation: draw 2s;
+        animation-duration: 2.5s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: odd; 
+        animation-timing-function: cubic-bezier(0, 0, .59, 1);
+        stroke-linecap: "round";
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 95.7;
+    }
+
+    #StrokeBottom1 {animation-delay: 1.0s;} #StrokeTop1 {animation-delay: 1.03s;}
+    #StrokeBottom2 {animation-delay: 0.9s;} #StrokeTop2 {animation-delay: 0.93s;}
+    #StrokeBottom3 {animation-delay: 0.8s;} #StrokeTop3 {animation-delay: 0.83s;}
+    #StrokeBottom4 {animation-delay: 0.7s;} #StrokeTop4 {animation-delay: 0.73s;}
+    #StrokeBottom5 {animation-delay: 0.6s;} #StrokeTop5 {animation-delay: 0.63s;}
+    #StrokeBottom6 {animation-delay: 0.5s;} #StrokeTop6 {animation-delay: 0.53s;}
+    #StrokeBottom7 {animation-delay: 0.4s;} #StrokeTop7 {animation-delay: 0.43s;}
+    #StrokeBottom8 {animation-delay: 0.3s;} #StrokeTop8 {animation-delay: 0.33s;}
+    #StrokeBottom9 {animation-delay: 0.0s;} #StrokeTop9 {animation-delay: 1.46s;}
+    #StrokeBottom10 {animation-delay: 0.0s;} #StrokeTop10 {animation-delay: 0.03s;}
+
+    .StrokeTopEven, .StrokeBottomEven{
+        stroke-dasharray: 1700; 
+        stroke-dashoffset: 1700;  
+        animation: draw 1s;
+        animation-duration: 1.5s;
+        animation-direction: reverse;
+        animation-fill-mode: backwards;
+        animation-iteration-count: even; 
+        animation-timing-function: cubic-bezier(0, 0, .59, 1);
+        stroke-linecap: "round";
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 95.7;
+    }
+    .StrokeBottom,.StrokeBottomEven  {
+        stroke-width: 98;
+    }
+
+/*WorksBar Animation Forward and Backward Data*/
+    .worksBarTop, .worksBarBottom{
+        stroke-dasharray: 1700; 
+        stroke-dashoffset: 1700;  
+        animation: draw 1s;
+        animation-duration: 2.5s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: odd; 
+        animation-timing-function: cubic-bezier(0, 0, .59, 1);
+        stroke-linecap: "round";
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 95.7;
+    }
+
+    #ProjectsBottom {animation-delay: 3.43s;} #ProjectsTop {animation-delay: 3.4s;} 
+    #ProductSketchesBottom {animation-delay: 3.03s;} #ProductSketchesTop {animation-delay: 3s;}
+    #ArtworksBottom {animation-delay: 3.43s;} #ArtworksTop {animation-delay: 3.4s;} 
+    #PhotographsBottom {animation-delay: 3.13s;} #PhotographsTop {animation-delay: 3.1s;}
+
+    .worksBarTopEven, .worksBarBottomEven {
+        stroke-dasharray: 1700; 
+        stroke-dashoffset: 1700;  
+        animation: draw 1s;
+        animation-duration: 1s;
+        animation-direction: reverse;
+        animation-fill-mode: backwards;
+        animation-iteration-count: even; 
+        animation-timing-function: cubic-bezier(0, 0, .59, 1);
+        stroke-linecap: "round";
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 95.7;
+    }
+
+    #ProjectsTopEven {animation-delay: -0.615s;} #ProjectsBottomEven {animation-delay: -0.6s;} 
+    #ProductSketchesTopEven {animation-delay: -0.215s;} #ProductSketchesBottomEven {animation-delay: -0.2s;}
+    #ArtworksTopEven {animation-delay: -0.615s;} #ArtworksBottomEven {animation-delay: -0.6s;} 
+    #PhotographsTopEven {animation-delay: -0.315s;} #PhotographsBottomEven {animation-delay: -0.3s;}
+
+    .worksBarBottom,.worksBarBottomEven  {
+        stroke-width: 98;
+    }
+
+/*Projetcs Bar Animation Forward and Backward Data*/
+    .ProjectsBarTop, .ProjectsBarBottom {
+        stroke-dasharray: 1700; 
+        stroke-dashoffset: 1700;  
+        animation: draw 1s;
+        animation-duration: 2.5s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: odd; 
+        animation-timing-function: cubic-bezier(0, 0, .59, 1);
+        stroke-linecap: "round";
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 95.7;
+    }
+    #Project1Bottom {animation-delay: 1.43s;} #Project1Top {animation-delay: 1.4s;} 
+    #Project2Bottom {animation-delay: 1.03s;} #Project2Top {animation-delay: 1s;}
+    #Project3Bottom {animation-delay: 1.43s;} #Project3Top {animation-delay: 1.4s;} 
+    #Project4Bottom {animation-delay: 1.63s;} #Project4Top {animation-delay: 1.61s;}
+
+    .ProjectsBarBottom,.ProjectsBarBottomEven  {
+        stroke-width: 98;
+    }
+    

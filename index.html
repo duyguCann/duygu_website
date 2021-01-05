@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!--Merhabalar Hocam,
+    1.Bir sürü şey denedim Works ve Projects sayfalarındaki yazıları göstermeyi beceremedim. Bu yüzden sayfalar arasındaki bağlantıyı da yapamadım.
+        -Javascript'te tam anlamadığım yerler var mı diye kotnrol ettim değiştirdim bir şeyleri sürekli olmadı
+        -Works kısmı için ayrı script dosyası açtım olmadı
+        -z-index: 1000 yaptım yine olmadı
+        -textPath yerine textLine denedim öyle tag yoktu. 
+        -line'a yazmaya çalışınca mı sorun oluyor dedim, works sayfasına path ekleyip ona yazdırmaya çalıştım, yine olmadı.
+      Sonuç:Bir yerde hata var ama o hata nerede bir türlü bulamadım :D
+          
+    2.Geçenlerde attığınız dosyayı kontrol ettiğimde görüyorum ki yazılar çubuklardan sonra geliyordu. Ama şuanki dosyada yazılar önce geliyor, karşılaştırdım
+    kontrol ettim, her şey aynı gözüküyor. Gözümden kaçan nedir bulamadım.
+    
+    3.Bir de hocam siz dosyayı attığınızdan beridir doyalarımda olan ama faydalarını anlamadığım bir kaç şey var;
+        -Sanırım aşağıdakilerini bu yazıların geç gelmesi için yapmıştınız. Ama artık çalışmıyor sanırım, anlamadım nedenini
+            #mWorks {transition-property: visible; transition-delay: 3s;}
+            #mMe {transition-property: visible; transition-delay: 3s;}
+        -Aşağıdaki de sanırım JavaScript ile alakalı, ama tam anlamadım yine de amacını.
+            #txts{
+                content: "&nbsp; Works";
+                content: "&nbsp; Me";
+            }
+        -Hocam bir de bunu yarı anladım, ama değişiklik yapsam neyi değiştirmiş olurum onu tam anlamadım.
+            setTimeout(myFunction, 2000);
+
+    4.Son olarak kafama takılan bir şey var hocam. Geçen derste de bu yazı gözükmeme olayı olmuştu ve Javascript'te hidden gözüküyor onu Visible yap
+    demiştiniz. Yapınca olmuştu. Şuanki dosyada bu verilerin hepsi visible. Ama eski çubuk üzerinde yazı olan sizn yaptığınız dosyayı kontrol ettiğimde
+    gördüm ki Javascrript'te hepsi visible.
+
+    Not: Hocam şimdilik B planı olarak bu animasyonların geri gitmesini hep yeni sayfaların başına ekledim. Onun çözümünü bulursak düzenleyeceğim sonrasında.
+    Dipnot: Hocam biraz fazla oldu kusura bakmayın, yazı için çok uğraşınca anlamadığım es geçtiğim diğer yerlerle mi ilgili diye düşünmeye başladığım için 
+    böyle oldu. Biraz yavaş gidiyorum bir de ama endişelenmeyin, üstesinden geleceğimi umuyorum :)
+    -->
+        <meta charser='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' href='styles.css'>
+        <title>Duygu Can</title>
+        <link rel='shortcut icon' href='logo.ico'>
+    </head>
+    <body>
+        <!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 920" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+
+            <!--1_1-->
+            <line id="StrokeBottom1" class="StrokeBottom" stroke="#9A5F33" x1="49" y1="0" x2="49" y2="533"/>                    
+            <line id="StrokeTop1" class="StrokeTop" stroke="#AE7F5C" x1="65" y1="0" x2="65" y2="515"/>
+            <!--2_2-->
+            <line id="StrokeBottom5" class="StrokeBottom" stroke="#F7B107" x1="162" y1="0" x2="162" y2="867"/>
+            <line id="StrokeTop5" class="StrokeTop" stroke="#F9C034" x1="178" y1="0" x2="178" y2="849"/>
+            <!--3_11-->
+            <path id="StrokeBottom3" class="StrokeBottom" stroke="#F7B107" d="M614,0v583c0,0,0,126,36,156"/>
+            <path id="StrokeTop3" class="StrokeTop" stroke="#F9C034" d="M630,0v565c0,0,0,126,36,156"/>
+            <!--4_16-->
+            <line id="StrokeBottom6" class="StrokeBottom" stroke="#54669B" x1="727" y1="0" x2="727" y2="840"/>
+            <line id="StrokeTop6" class="StrokeTop" stroke="#7585AE" x1="743" y1="0" x2="743" y2="822"/>
+            <!--5_12-->
+            <line id="StrokeBottom5" class="StrokeBottom" stroke="#F7B107" x1="1743" y1="0" x2="1743" y2="831"/>
+            <line id="StrokeTop5" class="StrokeTop" stroke="#F9C034" x1="1759" y1="0" x2="1759" y2="813"/>
+            <!--6_3-->
+            <line id="StrokeBottom2" class="StrokeBottom" stroke="#9A5F33" x1="1856" y1="0" x2="1856" y2="632"/>
+            <line id="StrokeTop2" class="StrokeTop" stroke="#AE7F5C" x1="1872" y1="0" x2="1872" y2="614"/>
+            <!--7_4-->
+            <line id="StrokeBottom4" class="StrokeBottom" stroke="#6DBD92" x1="1291" y1="0" x2="1291" y2="761"/>
+            <line id="StrokeTop4" class="StrokeTop" stroke="#8AC8A7" x1="1307" y1="0" x2="1307" y2="743"/>
+            <!--8_15-->
+            <line id="StrokeBottom1" class="StrokeBottom" stroke="#9A5F33" x1="1178" y1="0" x2="1178" y2="502"/>
+            <line id="StrokeTop1" class="StrokeTop" stroke="#AE7F5C" x1="1194" y1="0" x2="1194" y2="484"/>
+            <!--9_9-->
+            <line id="StrokeBottom7" class="StrokeBottom" stroke="#54669B" x1="952" y1="0" x2="952" y2="867"/>
+            <line id="StrokeTop7" class="StrokeTop" stroke="#7585AE" x1="968" y1="0" x2="968" y2="849"/>
+            <!--10_10-->
+            <path id="StrokeBottom4" class="StrokeBottom" stroke="#F7B107" d="M1065,0v608c0,0-0.76,77.74,43,125"/>
+            <path id="StrokeTop4" class="StrokeTop" stroke="#F9C034" d="M1081,0v590c0,0-0.76,77.74,43,125"/>
+            <!--11_8-->
+            <path id="StrokeBottom8" class="StrokeBottom" stroke="#54669B" d="M275,0v578c0,0-5.99,307.05,188,244c40-13,47-51,47-51"/>
+            <path id="StrokeTop8" class="StrokeTop" stroke="#7585AE" d="M291,0v560c0,0-5.99,307.05,188,244c40-13,47-51,47-51"/>
+            <!--13_14-->
+            <path id="StrokeBottom5" class="StrokeBottom" stroke="#6DBD92" d="M1630,0v602c0,0-16,126-106,159"/>
+            <path id="StrokeTop5" class="StrokeTop" stroke="#8AC8A7" d="M1646,0v584c0,0-16,126-106,159"/>
+            <!--14_17-->
+            <path id="StrokeBottom10" class="StrokeBottom" stroke="#E73C55" d="M1404,0v533c0,0,6,124-134,150s-179-247,0-282s241,70,241,70"/>
+            <path id="StrokeTop10" class="StrokeTop" stroke="#EC6176" d="M1420,0v515c0,0,6,124-134,150s-179-247,0-282s241,70,241,70"/>
+            <!--15_13-->
+            <path id="StrokeBottom3" class="StrokeBottom" stroke="#E73C55" d="M839,0v486.89c0,6.64-0.43,13.27-1.32,19.85C832.62,544.14,809.13,651,706,651"/>
+            <path id="StrokeTop3" class="StrokeTop" stroke="#EC6176" d="M855,0v468.89c0,6.64-0.43,13.27-1.32,19.85C848.62,526.14,825.13,633,722,633"/>
+            <!--16_5-->                      
+            <path id="StrokeBottom5" class="StrokeBottom" stroke="#AD2C3F" d="M388,0v335.76c0,84.37-23.63,167.77-70.62,242.63C272.8,649.39,202.56,720.85,94.5,746"/>
+            <path id="StrokeTop5" class="StrokeTop" stroke="#E73C55" d="M404,0v317.76c0,84.37-23.63,167.77-70.62,242.63C288.8,631.39,218.56,702.85,110.5,728"/>
+            <!--17_6-->            
+            <path id="StrokeBottom1" id="Me" class="StrokeBottom" stroke="#3E4C73" d="M1517,0v138.32c0,64.92,15.05,129.11,45,186.71c28.4,54.64,73.15,109.63,142,128.98"/>
+            <path id="StrokeTop1" id="Me" class="StrokeTop" stroke="#54669B" d="M1533,0v120.32c0,64.92,15.05,129.11,45,186.71c28.4,54.64,73.15,109.63,142,128.98"/>
+            <!--12_7-->           
+            <path id="StrokeBottom9" class="StrokeBottom" stroke="#6DBD92" d="M501,0v347.47c0,38.32,7.84,76.32,23.75,111.18C544.56,502.07,590,521.56,647,511c108-20,112-173,33-230c-80.67-58.21-157-67-263-60"/>
+            <path id="cubuk9" class="StrokeTop" stroke="#8AC8A7" d="M517,0v329.47c0,38.32,7.84,76.32,23.75,111.18C560.56,484.07,606,503.56,663,493c108-20,112-173,33-230c-80.67-58.21-157-67-263-60"/>
+
+            <path id= "Works" class="StrokeTop" fill="none" d="M82.72,798.94c1.86-18.83,15.88-34.8,35.28-40.94c79-25,172-74,236-177c41.29-66.45,69-143,77-217V62c0-25.41,20.59-46,46-46"/>
+            <!--path'ini değiştir-->
+                <path id="Me" fill="none" class="StrokeTop"  d="M1533,0v120.32c0,64.92,15.05,129.11,45,186.71c28.4,54.64,73.15,109.63,142,128.98"/>
+
+            <text id="txts" font-family="Roboto" font-size="70" fill="white" >
+                <textPath id="mWorks" class="texts" xlink:href="#Works"></textPath>
+                <textPath id="mMe" class="texts" xlink:href="#Me"></textPath>
+           </text>
+        </svg>
+
+        <script src="script.js"></script>
+    </body>
+
+    
+</html>
